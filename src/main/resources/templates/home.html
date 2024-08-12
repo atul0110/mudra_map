@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{common/base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<section>
+
+		<div th:if="${message}" class="alert alert-info">
+			<p th:text="${message.user_info_id}"></p>
+			<p th:text="${message.name}"></p>
+			<p th:text="${message.password}"></p>
+			<p th:text="${message.created_at}"></p>
+			<p th:text="${message.status}"></p>
+		</div>
+
+
+	</section>
+
+</body>
+</html>
